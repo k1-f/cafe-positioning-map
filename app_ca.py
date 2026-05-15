@@ -25,8 +25,6 @@ except FileNotFoundError:
 # ==========================================
 st.sidebar.header("⚙️ 表示フィルター設定")
 
-# デフォルトで「星乃珈琲」だけ外した状態のリストを作成（前回の考察を活かすため）
-default_brands = [b for b in brand_coords.index if b != "星乃珈琲"]
 
 # ブランドの複数選択メニュー
 selected_brands = st.sidebar.multiselect(
